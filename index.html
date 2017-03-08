@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://materializecss.com/pushpin-demo.html#! -->
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description"
+          content="Materialize is a modern responsive CSS framework based on Material Design by Google. ">
+    <title>时光轴</title>
+    <!-- CSS-->
+    <link href="files/prism.css" rel="stylesheet">
+    <link href="files/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="files/css" rel="stylesheet" type="text/css">
+    <link href="files/icon" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        html, body, .block {
+            height: 100%;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            background-color: rgba(0, 0, 0, .1);
+        }
+
+        footer {
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="blue" class="block white">
+    <div class="container" style="margin-top: 200px;">
+        <h3 class="center-align">ABOUT</h3>
+        <div class="col s12 m7">
+            <div class="card horizontal z-depth-5">
+                <div class="card-image">
+                    <img src="images/2.jpg">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <h5 style="border-bottom: 1px solid mediumseagreen; padding-bottom: 15px;">Robert "Nesta"
+                            Marley</h5>
+                        <p>Find key contacts at a company from Slack and look them up by role. Save hours of prospecting
+                            through LinkedIn that makes the sales process so inefficient.Find key contacts at a company
+                            from Slack and look them up by role. Save hours of prospecting through LinkedIn that makes
+                            the sales process so inefficient.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">WIKIPEDIA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--8b0606-->
+<div id="red" class="block" style="background: #ccc;">
+    <div style="width: 1200px; margin: 0 auto;">
+        <div style="height:200px;"></div>
+        <h3 class="center-align tit">TimeLine</h3>
+        <ul class="center-align list" id="year">
+            <li>1970</li>
+            <li>1971</li>
+            <li>1972</li>
+            <li>1973</li>
+            <li>1974</li>
+            <li>1975</li>
+            <li>1976</li>
+            <li>1977</li>
+            <li>1978</li>
+            <li>1979</li>
+            <li>1980</li>
+            <li>1981</li>
+        </ul>
+        <div class="line" id="line">
+            <span id="b"></span>
+        </div>
+        <div class="show-area center-align">
+            <h3 id="area">1970</h3>
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer" style="background: mediumseagreen;">
+    <div class="container">
+        <div class="row" style="margin-bottom: 0; padding-bottom: 15px;color: #fff;">
+            <div class="col l4 s12">
+                Home
+            </div>
+            <div class="col l4 s12">
+                About
+            </div>
+            <div class="col l4 s12">
+                Contact
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--  Scripts-->
+<script src="files/jquery-2.1.4.min.js"></script>
+<script>if (!window.jQuery) {
+    document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>');
+}
+</script>
+<script src="files/jquery.timeago.min.js"></script>
+<script src="files/prism.js"></script>
+<script src="files/lunr.min.js"></script>
+<script src="files/search.js"></script>
+<script src="files/materialize.js"></script>
+<script src="files/init.js"></script>
+
+<script src="js/startMove.js"></script>
+<script src="js/main.js"></script>
+<script src="js/drag.js"></script>
+<div class="hiddendiv common"></div>
+<audio controls="controls" style="display: none;"></audio>
+</body>
+<style type="text/css">#yddContainer {
+    display: block;
+    font-family: Microsoft YaHei;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -4px;
+    left: -4px;
+    font-size: 12px;
+    border: 1px solid
+}
+
+#yddTop {
+    display: block;
+    height: 22px
+}
+
+#yddTopBorderlr {
+    display: block;
+    position: static;
+    height: 17px;
+    padding: 2px 28px;
+    line-height: 17px;
+    font-size: 12px;
+    color: #5079bb;
+    font-weight: bold;
+    border-style: none solid;
+    border-width: 1px
+}
+
+#yddTopBorderlr .ydd-sp {
+    position: absolute;
+    top: 2px;
+    height: 0;
+    overflow: hidden
+}
+
+.ydd-icon {
+    left: 5px;
+    width: 17px;
+    padding: 0px 0px 0px 0px;
+    padding-top: 17px;
+    background-position: -16px -44px
+}
+
+.ydd-close {
+    right: 5px;
+    width: 16px;
+    padding-top: 16px;
+    background-position: left -44px
+}
+
+#yddKeyTitle {
+    float: left;
+    text-decoration: none
+}
+
+#yddMiddle {
+    display: block;
+    margin-bottom: 10px
+}
+
+.ydd-tabs {
+    display: block;
+    margin: 5px 0;
+    padding: 0 5px;
+    height: 18px;
+    border-bottom: 1px solid
+}
+
+.ydd-tab {
+    display: block;
+    float: left;
+    height: 18px;
+    margin: 0 5px -1px 0;
+    padding: 0 4px;
+    line-height: 18px;
+    border: 1px solid;
+    border-bottom: none
+}
+
+.ydd-trans-container {
+    display: block;
+    line-height: 160%
+}
+
+.ydd-trans-container a {
+    text-decoration: none;
+}
+
+#yddBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    background-position: left -22px
+}
+
+.ydd-padding010 {
+    padding: 0 10px
+}
+
+#yddWrapper {
+    color: #252525;
+    z-index: 10001;
+    background: url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);
+}
+
+#yddContainer {
+    background: #fff;
+    border-color: #4b7598
+}
+
+#yddTopBorderlr {
+    border-color: #f0f8fc
+}
+
+#yddWrapper .ydd-sp {
+    background-image: url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)
+}
+
+#yddWrapper a, #yddWrapper a:hover, #yddWrapper a:visited {
+    color: #50799b
+}
+
+#yddWrapper .ydd-tabs {
+    color: #959595
+}
+
+.ydd-tabs, .ydd-tab {
+    background: #fff;
+    border-color: #d5e7f3
+}
+
+#yddBottom {
+    color: #363636
+}
+
+#yddWrapper {
+    min-width: 250px;
+    max-width: 400px;
+}</style>
+</html>
