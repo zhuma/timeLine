@@ -31,13 +31,13 @@ window.onload = function () {
     //拖拽
     oB.onmousedown = function (e) {
         var ev = e || event;
-        var disX = ev.clientX - this.offsetLeft;
+        var disX = ev.clientX - this.offsetLeft - 7.5;
         var iNow = this;
         document.onmousemove = function (e) {
             var ev = e || event;
             var aNow = minVal(iNow);
 
-            var l = ev.clientX - disX - 7.5;
+            var l = ev.clientX - disX;
 
             if (l <= 0) {
                 l = 0;
