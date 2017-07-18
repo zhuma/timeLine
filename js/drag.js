@@ -37,7 +37,7 @@ window.onload = function () {
             var ev = e || event;
             var aNow = minVal(iNow);
 
-            var l = ev.clientX - disX;
+            var l = ev.clientX - disX - 7.5;
 
             if (l <= 0) {
                 l = 0;
@@ -49,7 +49,6 @@ window.onload = function () {
 
             iNow.style.left = l + "px";
             iNow.style.top = -5 + "px";
-
             oArea.innerHTML = oLi[aNow].innerHTML;
 
         };
