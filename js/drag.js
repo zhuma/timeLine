@@ -61,7 +61,7 @@ window.onload = function () {
 
     //求最短距离
     function getDis(arg1, arg2) {
-        var a = arg1.offsetLeft - (arg2.offsetLeft+50);
+        var a = (arg1.offsetLeft+15) - (arg2.offsetLeft+50);
         var b = 30;
         return Math.sqrt(a * a + b * b);
     }
